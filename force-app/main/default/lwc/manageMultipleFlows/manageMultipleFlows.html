@@ -1,0 +1,22 @@
+<template>
+  <template lwc:if={recordId}>
+    <template lwc:if={isHotRating}>
+      <lightning-flow
+        flow-api-name="Hot_Rating"
+        flow-input-variables={inputVariables}
+      ></lightning-flow>
+    </template>
+    <template lwc:elseif={isWarmRating}>
+      <lightning-flow
+        flow-api-name="Warm_Rating"
+        flow-input-variables={inputVariables}
+      ></lightning-flow>
+    </template>
+    <template lwc:elseif={isColdRating}>
+      <lightning-flow
+        flow-api-name="Cold_Rating"
+        flow-input-variables={inputVariables}
+      ></lightning-flow>
+    </template>
+  </template>
+</template>

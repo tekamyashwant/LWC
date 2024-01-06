@@ -1,0 +1,14 @@
+<template>
+  <lightning-card
+    icon-name="custom:custom14"
+    title="Get Object Infos - Multiple Objects"
+  >
+    <div class="slds-var-m-around_medium">
+      <template lwc:if={objectsInfos}>
+        <template for:each={objectsInfos.results} for:item="obj">
+          <p key={obj.result.apiName}>{obj.result.apiName}</p>
+        </template>
+      </template>
+    </div>
+  </lightning-card>
+</template>

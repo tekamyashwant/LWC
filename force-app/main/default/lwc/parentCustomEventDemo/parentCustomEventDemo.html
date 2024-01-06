@@ -1,0 +1,12 @@
+<template>
+  <lightning-card title="Parent Component" icon-name="custom:custom13">
+    <div class="slds-var-p-around_medium">
+      <template lwc:if={displayMessage}>
+        <p>Welcome to learn LWC - from BootCamp on YOUTUBE</p>
+      </template>
+    </div>
+    <c-child-custom-event-demo
+      ondisplaymsg={displayMessageHandler}
+    ></c-child-custom-event-demo>
+  </lightning-card>
+</template>

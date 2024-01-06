@@ -1,0 +1,50 @@
+<template>
+  <lightning-card title="Third Party JS" icon-name="custom:custom14">
+    <div class="slds-var-p-around_x-large">
+      <p class="slds-text-heading_medium slds-text-align_center">
+        {displayDate}
+      </p>
+    </div>
+  </lightning-card>
+  <lightning-card title="Third Party CSS" icon-name="custom:custom14">
+    <div class="slds-var-p-around_x-large">
+      <p
+        class="slds-text-heading_medium animate__heartBeat animate__delay-10s slds-text-align_center"
+      >
+        {name}
+      </p>
+    </div>
+  </lightning-card>
+  <lightning-card title="Check Permissions" icon-name="custom:custom14">
+    <div class="slds-var-p-around_x-large">
+      <template lwc:if={checkPermission}>
+        <p>You are authorized to view the message.</p>
+      </template>
+      <template lwc:else>
+        <p>You are not authorized to view the message.</p>
+      </template>
+    </div>
+  </lightning-card>
+  <lightning-card title="Logged In User Details" icon-name="custom:custom14">
+    <div class="slds-var-p-around_x-large">
+      <p class="slds-text-heading_medium">{name}</p>
+      <p class="slds-text-heading_medium">{email}</p>
+    </div>
+  </lightning-card>
+  <lightning-card title="Custom Label" icon-name="custom:custom14">
+    <div class="slds-var-p-around_x-large">
+      <p class="slds-text-heading_medium">{label.greetings}</p>
+      <p class="slds-text-heading_medium">{label.platform}</p>
+    </div>
+  </lightning-card>
+  <lightning-card title="Asset Resources Demo" icon-name="custom:custom14">
+    <div class="slds-var-p-around_x-large">
+      <img src={myAssetLogo} />
+    </div>
+  </lightning-card>
+  <lightning-card title="Static Resources Demo" icon-name="custom:custom14">
+    <div class="slds-var-p-around_x-large">
+      <img src={myLogoImage} />
+    </div>
+  </lightning-card>
+</template>

@@ -1,0 +1,21 @@
+<template>
+  <lightning-card title="Conditional Rendering" icon-name="custom:custom14">
+    <div class="slds-var-p-around_medium">
+      <lightning-input
+        label="Display Message"
+        type="checkbox"
+        onchange={changeHandler}
+      ></lightning-input>
+    </div>
+    <div class="slds-var-p-around_message">
+      <template lwc:if={displaymessage}>
+        <p class="slds-var-p-around_message">
+          Message : Welcome to learn JS from Tech Journey with Yashwant
+        </p>
+      </template>
+      <template lwc:else>
+        <p>You are not authorize to see message.</p>
+      </template>
+    </div>
+  </lightning-card>
+</template>

@@ -1,0 +1,49 @@
+<template>
+  <lightning-card>
+    <div class="slds-var-p-around_large">
+      <lightning-input
+        label="Number 1"
+        name="Number1"
+        placeholder="Enter Number1"
+        onchange={changeHandler}
+        value={numberone}
+      ></lightning-input>
+      <lightning-input
+        label="Number 2"
+        name="Number2"
+        placeholder="Enter Number2"
+        onchange={changeHandler}
+        value={numbertwo}
+      ></lightning-input>
+    </div>
+    <div>
+      <lightning-button
+        label="Add"
+        variant="brand"
+        onclick={clickHandler}
+        class="slds-var-p-around_large"
+      ></lightning-button>
+      <lightning-button
+        label="Sub"
+        variant="brand"
+        onclick={clickHandler}
+        class="slds-var-p-around_large"
+      ></lightning-button>
+      <lightning-button
+        label="Mul"
+        variant="brand"
+        onclick={clickHandler}
+        class="slds-var-p-around_large"
+      ></lightning-button>
+      <lightning-button
+        label="Div"
+        variant="brand"
+        onclick={clickHandler}
+        class="slds-var-p-around_large"
+      ></lightning-button>
+    </div>
+    <template lwc:if={displayoutput}>
+      <div class="slds-var-p-around_large">Output : {result}</div>
+    </template>
+  </lightning-card>
+</template>

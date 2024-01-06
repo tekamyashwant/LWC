@@ -1,0 +1,13 @@
+<template>
+  <lightning-card title="Get Records" icon-name="custom:custom14">
+    <div class="slds-var-m-around_medium">
+      <template lwc:if={outputDetails.data}>
+        <template for:each={outputDetails.data.results} for:item="output">
+          <p key={output.result.id}>
+            Nameof Record : {output.result.fields.Name.value}
+          </p>
+        </template>
+      </template>
+    </div>
+  </lightning-card>
+</template>

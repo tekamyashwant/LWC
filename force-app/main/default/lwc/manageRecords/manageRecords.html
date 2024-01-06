@@ -1,0 +1,11 @@
+<template>
+  <div class="slds-var-p-around_small">
+    <template lwc:if={inputRecordId}>
+      <lightning-record-form
+        record-id={inputRecordId}
+        object-api-name="Contact"
+        layout-type="Compact"
+      ></lightning-record-form>
+    </template>
+  </div>
+</template>

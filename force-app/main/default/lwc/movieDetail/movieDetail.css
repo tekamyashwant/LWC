@@ -1,0 +1,37 @@
+.container {
+  background-color: #171717;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.movie-poster img {
+  max-width: 300px;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.movie-title {
+  color: #d4aa11;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.movie-info {
+  text-align: left;
+  color: white;
+}
+
+.Plot {
+  max-width: 400px;
+  margin-left: 0;
+}
+
+b {
+  font-style: italic;
+  color: #d4aa11;
+}
+
+p {
+  font-size: large;
+}

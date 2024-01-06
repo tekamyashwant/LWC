@@ -1,0 +1,39 @@
+<template>
+  <lightning-card title="Naviagtion Demo">
+    <div class="slds-var-p-around_medium">
+      <lightning-button
+        label="Navigate to Home Page"
+        variant="brand"
+        onclick={navHomePageHandler}
+      ></lightning-button>
+    </div>
+    <div class="slds-var-p-around_medium">
+      <lightning-button
+        label="Navigate to List View"
+        variant="brand"
+        onclick={navAccountListViewPageHandler}
+      ></lightning-button>
+    </div>
+    <div class="slds-var-p-around_medium">
+      <lightning-button
+        label="Create Account - No Default Values"
+        variant="brand"
+        onclick={createAccountPageHandler}
+      ></lightning-button>
+    </div>
+    <div class="slds-var-p-around_medium">
+      <lightning-button
+        label="Create Account - Default Values"
+        variant="brand"
+        onclick={createAccountDefaultValuesPageHandler}
+      ></lightning-button>
+    </div>
+    <div class="slds-var-p-around_medium">
+      <lightning-button
+        label="Edit Account Record"
+        variant="brand"
+        onclick={editAccountPageHandler}
+      ></lightning-button>
+    </div>
+  </lightning-card>
+</template>

@@ -1,0 +1,22 @@
+<template>
+  <lightning-card title="Send Data from LWC To Aura">
+    <div class="slds-var-p-around_small">
+      <lightning-input
+        name="fname"
+        label="First Name"
+        onchange={changeHandler}
+      ></lightning-input>
+      <lightning-input
+        name="lname"
+        label="Last Name"
+        onchange={changeHandler}
+      ></lightning-input>
+    </div>
+    <div class="slds-var-p-around_small">
+      <lightning-button
+        label="Generate Message"
+        onclick={clickHandler}
+      ></lightning-button>
+    </div>
+  </lightning-card>
+</template>
